@@ -5,7 +5,7 @@ class CreateMovies < ActiveRecord::Migration[4.2]
       t.datetime :release_date
       t.string  :director
       t.string :lead,
-      t.bolean :in_theaters
+      t.boolean :in_theaters
   end
 end
 end
