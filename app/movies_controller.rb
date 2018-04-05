@@ -25,7 +25,7 @@ end
 def can_be_created_in_a_block(args = {title: "Home Alone"})
   Movie.create do |m|
   #   m.title = array[0]
-  m.title = "Home ALone"
+  m.title = "Home Alone"
   #  Movie.create(args) if !args.empty?
   end
 end
