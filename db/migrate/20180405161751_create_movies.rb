@@ -8,3 +8,4 @@ class CreateMovies < ActiveRecord::Migration
       t.bolean :in_theaters
   end
 end
+end
