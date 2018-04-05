@@ -25,7 +25,8 @@ end
 def can_be_created_in_a_block(args = {})
   Movie.create do |m|
   #   m.title = array[0]
-  args.each {|key, value| Movie.send(("#{key}"), value)}
+  # args.each {|key, value| Movie.send(("#{key}"), value)}
+  if !args.empty? Movie.create(args)
   end
 end
 
