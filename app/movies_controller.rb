@@ -22,9 +22,9 @@ def can_be_created_with_a_hash_of_attributes
   movie = Movie.create(attributes)
 end
 
-def can_be_created_in_a_block(args = __)
-  Movie.create do |m|
-    ___
+def can_be_created_in_a_block(args = array)
+  m = Movie.create do |m|
+    m.title = array[0]
   end
 end
 
