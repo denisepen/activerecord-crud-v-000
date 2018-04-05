@@ -26,6 +26,10 @@ def can_be_created_in_a_block(args = {title: "Home Alone", title: "The Room"})
   Movie.create do |m|
   #   m.title = array[0]
   m.title = args[:title]
+  m.release_date = args[:release_date]
+  m.director = args[:director]
+  m.lead = args [:lead] 
+  m.in_theaters = args[:in_theaters]
   #  Movie.create(args) if !args.empty?
   end
 end
